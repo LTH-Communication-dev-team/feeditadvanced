@@ -1702,7 +1702,7 @@ TYPO3.FeEdit.EditWindow = Ext.extend(TYPO3.FeEdit.Base, {
 	},
 
 	displayIframe: function(headerText, url) {
-            headerText = headerText+'<span onclick="closeIframe();return false;" class="fancybox-close"></span>';
+            headerText = headerText+'<span onclick="closeIframe();return false;" class="fancybox-close"></span><span onclick="loadHelp();return false;" class="help-button"></span>';
 		height = TYPO3.configuration.feeditadvanced.editWindow.height ? parseInt(TYPO3.configuration.feeditadvanced.editWindow.height) : 600;
 		width = TYPO3.configuration.feeditadvanced.editWindow.width ? parseInt(TYPO3.configuration.feeditadvanced.editWindow.width) : 800;
 		Ext.ux.Lightbox.openUrl({'href': url, 'title': headerText}, width, height);

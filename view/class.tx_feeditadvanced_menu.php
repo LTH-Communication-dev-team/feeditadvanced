@@ -246,7 +246,7 @@ class tx_feeditadvanced_menu {
                 </li>
                 
                 <li id="extend_feeditadvanced_top_menu_help" class="top_menu_item">
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:helpTooltip').'" onclick="loadHelp();return false;">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:helpTooltip').'" onclick="loadHelp();return false;" href="#">
                         <span class="icon-white-question-sign"></span>
                         <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:help').'</span>
                     </a>
