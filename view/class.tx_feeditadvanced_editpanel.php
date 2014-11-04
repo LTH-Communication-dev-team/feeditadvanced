@@ -631,42 +631,42 @@ class tx_feeditadvanced_editpanel {
 		$buttons .= '</div>';
 
 		if (!$fieldList && $this->modTSconfig['formsOnPage.']['useListForFields']) {
-			if ($this->modTSconfig['formsOnPage.'][$table.'.']) {
-				if ($table == 'tt_content') {
-					if ($processedDataArr['CType'] == 'list') {
-						$fieldList = trim($this->modTSconfig['formsOnPage.'][$table.'.'][$processedDataArr['CType'].'.'][$processedDataArr['list_type'].'.']['fieldList']);
-					} else {
-						$fieldList = trim($this->modTSconfig['formsOnPage.'][$table.'.'][$processedDataArr['CType'].'.']['0.']['fieldList']);
-					}
-				} else {
-					$fieldList = trim($this->modTSconfig['formsOnPage.'][$table.'.']['fieldList']);
-				}
-			} elseif ($conf['formsOnPage.']) {
-				if($table == 'tt_content') {
-					if($processedDataArr['CType'] == 'list') {
-						$fieldList = trim($conf['formsOnPage.'][$processedDataArr['CType'].'.'][$processedDataArr['list_type'].'.']['fieldfieldList']);
-					} else {
-						$fieldList = trim($conf['formsOnPage.'][$processedDataArr['CType'].'.']['0.']['fieldList']);
-					}
-				} else {
-					$fieldList = trim($conf['formsOnPage.']['fieldList']);
-				}
-			} elseif ($hookRef = $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_content.php']['formsOnPageFieldList'][$table]) {
-				$hookObj = &t3lib_div::getUserObj($hookRef);
-				if ($table == 'tt_content') {
-					$CType = $processedDataArr['CType'];
-					if($processedDataArr['CType'] == 'list') {
-						$CType ='getList_tt_content_list_' . $processedDataArr['list_type'];
-					} else {
-						$hookName='getList_tt_content_' . $CType;
-					}
-				} else {
-					$hookName='getList_' . $table;
-				}
-				if (is_object($hookObj) && method_exists($hookObj, $hookName)) {
-					$fieldList = $hookObj->$hookName(); //$table,$CType,$LType
-				}
-			}
+                    if ($this->modTSconfig['formsOnPage.'][$table.'.']) {
+                        if ($table == 'tt_content') {
+                            if ($processedDataArr['CType'] == 'list') {
+                                    $fieldList = trim($this->modTSconfig['formsOnPage.'][$table.'.'][$processedDataArr['CType'].'.'][$processedDataArr['list_type'].'.']['fieldList']);
+                            } else {
+                                    $fieldList = trim($this->modTSconfig['formsOnPage.'][$table.'.'][$processedDataArr['CType'].'.']['0.']['fieldList']);
+                            }
+                        } else {
+                            $fieldList = trim($this->modTSconfig['formsOnPage.'][$table.'.']['fieldList']);
+                        }
+                } elseif ($conf['formsOnPage.']) {
+                        if($table == 'tt_content') {
+                                if($processedDataArr['CType'] == 'list') {
+                                        $fieldList = trim($conf['formsOnPage.'][$processedDataArr['CType'].'.'][$processedDataArr['list_type'].'.']['fieldfieldList']);
+                                } else {
+                                        $fieldList = trim($conf['formsOnPage.'][$processedDataArr['CType'].'.']['0.']['fieldList']);
+                                }
+                        } else {
+                                $fieldList = trim($conf['formsOnPage.']['fieldList']);
+                        }
+                } elseif ($hookRef = $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_content.php']['formsOnPageFieldList'][$table]) {
+                        $hookObj = &t3lib_div::getUserObj($hookRef);
+                        if ($table == 'tt_content') {
+                                $CType = $processedDataArr['CType'];
+                                if($processedDataArr['CType'] == 'list') {
+                                        $CType ='getList_tt_content_list_' . $processedDataArr['list_type'];
+                                } else {
+                                        $hookName='getList_tt_content_' . $CType;
+                                }
+                        } else {
+                                $hookName='getList_' . $table;
+                        }
+                        if (is_object($hookObj) && method_exists($hookObj, $hookName)) {
+                                $fieldList = $hookObj->$hookName(); //$table,$CType,$LType
+                        }
+                    }
 		}
 
 			// if fieldList exists and it is not empty
