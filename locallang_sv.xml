@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<data type="array">
+                <languageKey index="sv" type="array">
+			<label index="statusEditingOn">ändring On</label>
+			<label index="statusEditingOff">ändring Off</label>
+			<label index="statusDeactivateEditing">Deactivate ändring</label>
+			<label index="statusActivateEditing">Activate ändring</label>
+			<label index="closeEditMode">Stäng edit</label>
+			<label index="openEditMode">Ändra sida</label>
+			<label index="toggle_advanced">Advanced</label>
+			<label index="toggle_simple">Simple</label>			
+			<label index="alertChange">This change will affect which fields are available in the form. Please save detta record in order to get a new field set.</label>
+			<label index="fe_users.tx_wecfeedit_beuser">Backend User To Link To</label>
+			<label index="usersOnPage">WARNING: Following users are editing detta page:</label>
+			<label index="copyIcon">Kopiera</label>
+			<label index="copyTitle">Kopiera element</label>
+			<label index="cutIcon">Klipp ut</label>
+			<label index="cutTitle">Klipp ut detta element.</label>
+			<label index="deleteIcon">Radera</label>
+			<label index="deleteTitle">Radera detta element</label>
+			<label index="downIcon">Down</label>
+			<label index="downTitle">Move detta down</label>
+			<label index="editIcon">Ändra</label>
+			<label index="editTitle">Ändra detta element</label>
+			<label index="hideIcon">Göm</label>
+			<label index="hideTitle">Göm detta element</label>
+			<label index="newPageIcon">Ny sida</label>
+			<label index="newRecordIcon">Nytt</label>
+			<label index="newRecordInTopOfColumnTitle">Nytt innehåll överst i denna kolumn</label>
+			<label index="newRecordTitle">Nytt innehåll efter detta element</label>
+			<label index="pasteIcon">Klistra in</label>
+			<label index="pasteTitle">Klistra in element efter existerande element</label>
+			<label index="refTitle">Skapa referens</label>
+			<label index="unhideIcon">Visa</label>
+			<label index="unhideTitle">Visa detta gömda element</label>
+			<label index="dragIcon">Dra</label>
+			<label index="dragTitle">Klicka för att dra detta element</label>
+			<label index="upIcon">Upp</label>
+			<label index="upTitle">Move detta up</label>
+
+			<label index="saveButton">Spara</label>
+			<label index="saveCloseButton">Spara &amp; stäng</label>
+			<label index="closeButton">Stäng</label>
+
+
+			<label index="pageEditButton">Sidans egenskaper</label>
+			<label index="pageEditTooltip">Ändra denna sidas egenskaper.</label>
+			<label index="pageNewButton">Ny sida</label>
+			<label index="pageNewTooltip">Skapa em ny sida som undersida till denna sida.</label>
+			<label index="pageDeleteButton">Delete Page</label>
+			<label index="pageDeleteTooltip">Delete detta page.</label>
+			<label index="pageHideButton">Göm Page</label>
+			<label index="pageHideTooltip">Göm denna sida.</label>
+			<label index="pageShowHidden">Visa gömda innehållselement</label>
+			<label index="pageShowHiddenTooltip">Toggle the display of gömda innehåll elements on or off.</label>
+
+			<label index="previewTitle">Preview</label>
+			<label index="previewTooltip">Preview detta page</label>
+			<label index="closeTitle">Close</label>
+			<label index="closeTooltip">Close Frontend ändring.</label>
+			<label index="logoutTooltip">Logga ut från TYPO3 Backend.</label>
+			<label index="openTooltip">Open Frontend ändring.</label>
+			<label index="clipboardTitle">Clipboard</label>
+			<label index="clipboardTooltip">Use the clipboard to copy and paste innehåll.</label>
+			<label index="dragWidgets">Dra widgets onto the page.</label>
+
+			<label index="js.dropMessage">Släpp innehållet här</label>
+			<label index="js.loadingMessage">Ladda editingsformulär</label>
+			<label index="js.ajaxError">AJAX Error</label>
+			<label index="js.generalError">It looks like we encountered some problems. Please reload the page and try again or contact your administrator.</label>
+			<label index="js.alreadyProcessingAction">Already processing an action, please wait.</label>
+			<label index="js.newContentElement">Nytt innehållselement</label>
+			<label index="js.newPage">Ny sida</label>
+			<label index="js.editContentElement">Ändra innehållselement</label>
+			<label index="js.editPageProperties">Ändra sidans egenskaper</label>
+			<label index="js.confirmDelete">Är du säker på att du vill radera innehållet?</label>
+			<label index="js.hideNotification">Göm innehåll</label>
+			<label index="js.unhideNotification">Visa innehåll</label>
+			<label index="js.moveNotification">Flytta innehåll</label>
+			<label index="js.saveNotification">Spara innehåll</label>
+			<label index="js.closeNotification">Stäng editing form</label>
+			<label index="js.copyNotification">Kopiera innehåll</label>
+			<label index="js.cutNotification">Klipp ut innehåll</label>
+			<label index="js.pasteNotification">Klistra in innehåll</label>
+			<label index="js.updatingContent">Uppdatera innehåll</label>
+		</languageKey>
+	</data>
+</T3locallang>
