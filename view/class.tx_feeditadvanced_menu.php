@@ -179,7 +179,7 @@ class tx_feeditadvanced_menu {
             <ul class="extend_feeditadvanced_top_menu">
                 
                 <li id="extend_feeditadvanced_top_menu_page" class="top_menu_item" onmouseenter="toggleItem(\'.feEditAdvanced-pageItemsMenu\',\'me\');return false;" onmouseleave="toggleItem(\'.feEditAdvanced-pageItemsMenu\');return false;" >
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pageTooltip').'" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pageTooltip').'">
                         <span class="icon-white-edit"></span>
                         <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:page').'</span>
                     </a>
@@ -204,7 +204,7 @@ class tx_feeditadvanced_menu {
                 </li>
 
 		<li id="extend_feeditadvanced_top_menu_new" class="top_menu_item" onmouseenter="toggleItem(\'.feEditAdvanced-newItemsMenu\',\'me\');return false;" onmouseleave="toggleItem(\'.feEditAdvanced-newItemsMenu\');return false;">
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newTooltip').'" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newTooltip').'">
                         <span class="icon-white-plus"></span>
                         <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:new').'</span>
                     </a>
@@ -219,7 +219,7 @@ class tx_feeditadvanced_menu {
                 </li>
                 
                 <li id="extend_feeditadvanced_top_menu_tool" class="top_menu_item" onmouseenter="toggleItem(\'.feEditAdvanced-toolItemsMenu\',\'me\');return false;" onmouseleave="toggleItem(\'.feEditAdvanced-toolItemsMenu\');return false;">
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolTooltip').'" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolTooltip').'">
                         <span class="icon-white-cog"></span>
                         <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:tool').'</span>
                     </a>
@@ -232,7 +232,7 @@ class tx_feeditadvanced_menu {
                 </li>                
 
                 <li id="extend_feeditadvanced_top_menu_display" class="top_menu_item" onmouseenter="toggleItem(\'.feEditAdvanced-displayItemsMenu\',\'me\');return false;" onmouseleave="toggleItem(\'.feEditAdvanced-displayItemsMenu\');return false;">
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:displayTooltip').'" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:displayTooltip').'">
                         <span class="icon-white-eye-open"></span>
                         <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:display').'</span>
                     </a>
@@ -246,7 +246,7 @@ class tx_feeditadvanced_menu {
                 </li>
                 
                 <li id="extend_feeditadvanced_top_menu_help" class="top_menu_item">
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:helpTooltip').'" onclick="loadHelp();return false;" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:helpTooltip').'" onclick="loadHelp();return false;">
                         <span class="icon-white-question-sign"></span>
                         <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:help').'</span>
                     </a>
@@ -257,7 +257,7 @@ class tx_feeditadvanced_menu {
                     $hiddenStyle ='';
                 }
                 $content .= '<li id="extend_feeditadvanced_top_menu_paste" class="top_menu_item"'.$hiddenStyle.'>
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pasteTooltip').'" onclick="pasteAction(\'\');return false;" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pasteTooltip').'" onclick="pasteAction(\'\');return false;">
                     <span class="icon-white-download-alt"></span>
                     <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:paste').'</span>
                     </a>
@@ -270,7 +270,7 @@ class tx_feeditadvanced_menu {
                 <li id="extend_feeditadvanced_top_logo"><a href="http://typo3.org"><div class="extend_feeditadvanced_top_logo"></div></a></li>
                 
                 <li id="extend_feeditadvanced_top_menu_user" class="top_menu_item" onmouseenter="toggleItem(\'.feEditAdvanced-userItemsMenu\',\'me\');return false;" onmouseleave="toggleItem(\'.feEditAdvanced-userItemsMenu\');return false;">
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:userTooltip').'" href="#">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:userTooltip').'">
                         <span class="icon-white-user"></span>
                         <span>' . $GLOBALS['BE_USER']->user['username'] . '</span>
                     </a>
