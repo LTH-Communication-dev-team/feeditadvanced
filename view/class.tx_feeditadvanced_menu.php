@@ -210,7 +210,10 @@ class tx_feeditadvanced_menu {
                     </a>
                     <div class="feEditAdvanced-newItemsMenu top_menu_div">
                         <ul>
-                            <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPageTooltip').'" href="#" onclick="newPage();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPage').'</a></li>
+                            <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPageInsideTooltip').'" href="#" onclick="newPage(\'\');return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPageInside').'</a></li>
+				
+                            <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPageBelowTooltip').'" href="#" onclick="newPage(\'-\');return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPageBelow').'</a></li>
+
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newContentTooltip').'" href="#" onclick="newContent();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newContent').'</a></li>
                             <li id="extend_feeditadvanced_create_news"><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newNewsTooltip').'" href="#" onclick="createNews();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newNews').'</a></li>
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newInsertRightColumnTooltip').'" href="#" onclick="addRightColumn();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newInsertRightColumn').'</a></li>
@@ -267,7 +270,7 @@ class tx_feeditadvanced_menu {
                     <div id="msg-div"></div>
                 </li>
                 
-                <li id="extend_feeditadvanced_top_logo"><a href="http://typo3.org"><div class="extend_feeditadvanced_top_logo"></div></a></li>
+                <li id="extend_feeditadvanced_top_logo"><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:topLogoTooltip').'" href="http://typo3.org"><div class="extend_feeditadvanced_top_logo"></div></a></li>
                 
                 <li id="extend_feeditadvanced_top_menu_user" class="top_menu_item" onmouseenter="toggleItem(\'.feEditAdvanced-userItemsMenu\',\'me\');return false;" onmouseleave="toggleItem(\'.feEditAdvanced-userItemsMenu\');return false;">
                     <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:userTooltip').'">
