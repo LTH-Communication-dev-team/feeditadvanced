@@ -1117,11 +1117,13 @@ TYPO3.FeEdit.DeleteAction = Ext.extend(TYPO3.FeEdit.EditPanelAction, {
 TYPO3.FeEdit.HideAction = Ext.extend(TYPO3.FeEdit.EditPanelAction, {
 	_process: function(json) {
 		if (this.parent && this.parent.getTableName() != 'pages') {
+                    console.log('1120');
+
                     //var isChecked = Ext.get('feEditAdvanced-showHiddenContent-input').is(':checked');
                     var isChecked = Ext.get('hiddenElement').getStyle('display');
                     //hiddenElement
                     if(isChecked==='inline-block') {
-			this.parent.el.addClass('feEditAdvanced-hidden');
+			this.parent.el.addClass('feEditAdvanced-hiddenElement');
                         //console.log('nocb!');
                     } else {
                         this.parent.el.setStyle('display','none');
@@ -1146,7 +1148,7 @@ TYPO3.FeEdit.HideAction = Ext.extend(TYPO3.FeEdit.EditPanelAction, {
 TYPO3.FeEdit.UnhideAction = Ext.extend(TYPO3.FeEdit.EditPanelAction, {
 	_process: function(json) {
 		if (this.parent && this.parent.getTableName() != 'pages') {
-			this.parent.el.removeClass('feEditAdvanced-hiddenElement');
+                this.parent.el.removeClass('feEditAdvanced-hiddenElement');
 			Ext.get(this.parent.el.select('input.unhideAction').first()).setDisplayed('none');
 			Ext.get(this.parent.el.select('input.hideAction').first()).setDisplayed('block');
 		}

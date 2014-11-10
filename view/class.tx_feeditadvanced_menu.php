@@ -226,7 +226,7 @@ class tx_feeditadvanced_menu {
                     <div class="feEditAdvanced-toolItemsMenu top_menu_div">
                         <ul>
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolFileManagerTooltip').'" href="#" onclick="fileManager();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolFileManager').'</a></li>
-                            <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManagerTooltip').'" href="#" onclick="mailFormManager();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManager').'</a></li>
+                            <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManagerTooltip').'" href="#" onclick="mailFormAdmin();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManager').'</a></li>
                        </ul>
                     </div>
                 </li>                
@@ -257,7 +257,7 @@ class tx_feeditadvanced_menu {
                     $hiddenStyle ='';
                 }
                 $content .= '<li id="extend_feeditadvanced_top_menu_paste" class="top_menu_item"'.$hiddenStyle.'>
-                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pasteTooltip').'" onclick="pasteAction(\'\');return false;">
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pasteTooltip').'" onclick="pasteAction(\'\');return false;" href="#">
                     <span class="icon-white-download-alt"></span>
                     <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:paste').'</span>
                     </a>
