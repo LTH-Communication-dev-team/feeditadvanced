@@ -86,7 +86,7 @@ class tx_feeditadvanced_frontendedit extends t3lib_frontendedit {
                 }
         
                 $cssContent = '<style type="text/css">
-                .feEditAdvanced-hiddenPage-1 {
+		    .feEditAdvanced-hiddenPage-1 {
                         display:'. $userSettingsArray['hiddenPage'] . ';
                         opacity: 0.5;
                         -ms-filter: "alpha(opacity=50)";
