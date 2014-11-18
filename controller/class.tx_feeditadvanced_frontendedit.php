@@ -86,17 +86,16 @@ class tx_feeditadvanced_frontendedit extends t3lib_frontendedit {
                 }
         
                 $cssContent = '<style type="text/css">
+		    
 		    .feEditAdvanced-hiddenPage-1 {
                         display:'. $userSettingsArray['hiddenPage'] . ';
-                        opacity: 0.5;
-                        -ms-filter: "alpha(opacity=50)";
                     }
 
                     .feEditAdvanced-hiddenInMenu-1 {
                         display:'. $userSettingsArray['hiddenInMenu'] . ';
-                        opacity: 0.5;
-                        -ms-filter: "alpha(opacity=50)";
                     }
+		    
+		    
                     </style>';
                 $GLOBALS["TSFE"]->additionalHeaderData["feeditadvanced_extracss"] = $cssContent;
 
