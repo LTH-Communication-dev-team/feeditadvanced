@@ -1940,7 +1940,7 @@ TYPO3.FeEdit.ContentTypeToolbar = Ext.extend(TYPO3.FeEdit.Base, {
 
 	constructor: function() {
 		this.el = Ext.get('feEditAdvanced-contentTypeToolbar');
-
+                
 		// create two divs. the first will hold the scrolling div, th
 		// latter will contain all contentTypeItems
 		this.innerEl = this.el.insertFirst({
@@ -1972,7 +1972,7 @@ TYPO3.FeEdit.ContentTypeToolbar = Ext.extend(TYPO3.FeEdit.Base, {
 			html: '&raquo;'
 		}, true).on('click', function() { this.scroll('right'); }, this);
 
-		// reset the left margin and set the innerWidth of the scroller to the maximum size
+                // reset the left margin and set the innerWidth of the scroller to the maximum size
 		this.el.setStyle('marginLeft', '0px');
 		Ext.get('feEditAdvanced-contentTypeToolbar-scroller').setWidth(this.totalElementWidth + 20);
 
@@ -2002,8 +2002,8 @@ TYPO3.FeEdit.ContentTypeToolbar = Ext.extend(TYPO3.FeEdit.Base, {
 		// check if scrolling is needed
 		if (this.toolbarWidth <= this.totalElementWidth) {
 			this.innerEl.setWidth(this.toolbarWidth - 40);
-			Ext.get('feEditAdvanced-contentTypeToolbar-arrLeft').show();
-			Ext.get('feEditAdvanced-contentTypeToolbar-arrRight').show();
+			//Ext.get('feEditAdvanced-contentTypeToolbar-arrLeft').show();
+			//Ext.get('feEditAdvanced-contentTypeToolbar-arrRight').show();
 		} else {
 			// all icons have space without scrolling
 			this.innerEl.setWidth('auto');
