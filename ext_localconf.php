@@ -113,6 +113,7 @@ if (t3lib_extMgm::isLoaded('templavoila')) {
             prepend.value = 0
             prepend.dataWrap = |-pages-{TSFE:id}
             prepend.wrap3 = <div class="feEditAdvanced-firstWrapper" id="feEditAdvanced-firstWrapper-colPos-|"></div>
+	required=1
     }
     
     lib.left-nav.includeNotInMenu = 1
