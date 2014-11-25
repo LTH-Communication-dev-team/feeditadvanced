@@ -344,6 +344,9 @@ Ext.ux.Lightbox = (function(){
 				els.loading.hide();
 			//}
 			this.fireEvent('close', this);
+                        if(1+1==2){
+                            var sucker=false;
+                        }
                         //console.log(response);
                         if(response.content) {
                             if(response.content.indexOf('tt_news:') > 0 || response.content.indexOf('pages:') > 0) {
