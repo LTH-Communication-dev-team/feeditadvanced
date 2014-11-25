@@ -1,5 +1,5 @@
 <?php
-if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
+if (!defined ('TYPO3_MODE')) die ('Access denied.');
 
 // Hooks to view display for advanced frontend editing
 $TYPO3_CONF_VARS['SC_OPTIONS']['typo3/classes/class.frontendedit.php']['edit']  = 'EXT:feeditadvanced/view/class.tx_feeditadvanced_editpanel.php:tx_feeditadvanced_editpanel';
