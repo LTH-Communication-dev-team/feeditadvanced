@@ -88,7 +88,7 @@ TYPO3.FeEdit.ToolbarWidget = function(draggableEl) {
 	// is called over and over again, until you leave or drop the
 		// id is the ID of the drop zone
 /*	this.dd.onDragOver = function(evt, id) {
-		console.log('Toolbarwidget is currently over ' + id);
+		//console.log('Toolbarwidget is currently over ' + id);
 	};*/
 
 	this.dd.afterInvalidDrop = function(evt, id) {
@@ -1117,7 +1117,7 @@ TYPO3.FeEdit.DeleteAction = Ext.extend(TYPO3.FeEdit.EditPanelAction, {
 TYPO3.FeEdit.HideAction = Ext.extend(TYPO3.FeEdit.EditPanelAction, {
 	_process: function(json) {
 		if (this.parent && this.parent.getTableName() != 'pages') {
-                    console.log('1120');
+                    //console.log('1120');
 
                     //var isChecked = Ext.get('feEditAdvanced-showHiddenContent-input').is(':checked');
                     var isChecked = Ext.get('hiddenElement').getStyle('display');
@@ -1594,7 +1594,7 @@ function setCookie(name, value, expires, domain, secure)
         }
         document.cookie = cookieStr;
     } catch(e) {
-        console.log('no cookie!');
+        //console.log('no cookie!');
     }
 }
 

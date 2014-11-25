@@ -57,11 +57,11 @@ class tx_feeditadvanced_extendjs {
         if(elems[i].className){
         if((elems[i].className).indexOf(matchClass) > -1) {
             //elems[i].className='hh';
-            console.log(elems[i].id+elems[i].className);
+            //console.log(elems[i].id+elems[i].className);
         }
         }
     }
-    console.log('no!');
+    //console.log('no!');
 }
 Ext.onReady(function() {
     replaceContentInContainer('x-tool x-tool-close');

@@ -155,7 +155,7 @@ Ext.ux.Lightbox = (function(){
 						shimWidth = fWidth;
 					}
                                         shimWidth = 1205;
-                                        console.log(shimWidth+';'+fWidth);
+                                        //console.log(shimWidth+';'+fWidth);
 					els.lightbox.setStyle({
 						//top: lightboxTop + 'px',
 						//left: lightboxLeft + 'px'
