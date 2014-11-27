@@ -85,7 +85,7 @@ class tx_feeditadvanced_frontendedit extends t3lib_frontendedit {
                     }
                 }
         
-                $cssContent = '<style type="text/css">
+                $cssContent = '<script>TYPO3={};TYPO3.settings = {"dateFormat":["j-n-Y","G:i j-n-Y"],"dateFormatUS":["n-j-Y","G:i n-j-Y"]};</script><style type="text/css">
 		    
 		    .feEditAdvanced-hiddenPage-1 {
                         display:'. $userSettingsArray['hiddenPage'] . ';

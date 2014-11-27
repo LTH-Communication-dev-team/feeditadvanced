@@ -1507,10 +1507,9 @@ Ext.override(TYPO3.FeEdit.EditPanel, {
 
 function copyAction(json)
 {
-    
-    
     var uid = json.record;
-    var cookieContent = $('#'+uid.replace(':','\\:')).clone().wrap('<div>').parent().html();//$('#'+uid).outerHTML();
+    var tmpContent = $('#'+uid.replace(':','\\:')).find('.feEditAdvanced-contentWrapper').html();//$('#'+uid).outerHTML();
+    ajax('tmpContent','',uid,'',tmpContent);
     
     //document.cookie="extend_feeditadvanced_copycutitem=copy:"+uid+':'+escape(cookieContent);
     setCookie('extend_feeditadvanced_copycutitem', 'copy:'+uid,1);
@@ -1528,8 +1527,9 @@ function copyAction(json)
 function cutAction(json)
 {
     var uid = json.record;
-    //var cookieContent = $('#'+uid.replace(':','\\:')).clone().wrap('<div>').parent().html();
-    //document.cookie="extend_feeditadvanced_copycutitem=cut:"+uid+':'+escape(cookieContent);
+    
+    var tmpContent = $('#'+uid.replace(':','\\:')).find('.feEditAdvanced-contentWrapper').html();//$('#'+uid).outerHTML();
+    ajax('tmpContent','',uid,'',tmpContent);
     
     setCookie('extend_feeditadvanced_copycutitem', 'cut:'+uid,1);
     $('#'+uid.replace(':','\\:')).remove();

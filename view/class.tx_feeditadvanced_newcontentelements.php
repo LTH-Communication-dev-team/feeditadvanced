@@ -97,6 +97,9 @@ class tx_feeditadvanced_newcontentelements {
 	    $this->init();
 
 	    $wizardItems = $this->getWizardItems();
+	    /*print '<pre>';
+	    print_r($wizardItems);
+	    print '</pre>';*/
 
 			// Hook for manipulating wizardItems, wrapper, onClickEvent etc.
 		if(is_array($GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms']['db_new_content_el']['wizardItemsHook'])) {
@@ -164,6 +167,7 @@ class tx_feeditadvanced_newcontentelements {
 		if (is_array($this->config)) {
 			$wizards = $this->config['wizardItems.'];
 		}
+
 		$appendWizards = $this->wizard_appendWizards($wizards['elements.']);
 
 		$wizardItems = array();
