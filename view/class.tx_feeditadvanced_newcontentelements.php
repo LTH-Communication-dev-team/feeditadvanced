@@ -213,6 +213,7 @@ class tx_feeditadvanced_newcontentelements {
 		if (!is_array($wizardElements)) {
 			$wizardElements = array();
 		}
+
 		if (is_array($GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses'])) {
 			foreach ($GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses'] as $class => $path) {
 				require_once($path);

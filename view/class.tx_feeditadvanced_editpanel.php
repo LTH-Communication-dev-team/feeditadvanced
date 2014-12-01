@@ -800,14 +800,17 @@ class tx_feeditadvanced_editpanel {
                                             i++;
                                         });
                                     });
-                                    
+                                    firstOptions=true;
                                     for (i=0;i<items.length; i++) {
-                                        if(items[i].className === "firstOptions") {
+                                        if(items[i].className === "firstOptions" && firstOptions===true) {
                                             marginLeft = items[i].offsetWidth;
-                                            
                                             firstI = i;
-                                           // items[i].style.width = marginLeft+\'px\';
-                                        } else if(items[i].className === "otherOptions") {
+					    firstOptions=false;
+                                        } else if(items[i].className === "firstOptions" && firstOptions===false) {
+					    items[i].className = \'otherOptions\';
+					    items[i].style.marginLeft = \'0px\';
+					    items[i].style.borderLeft = \'none\';
+					} else if(items[i].className === "otherOptions") {
                                             otherOptionsId = i;
                                             heightSum += items[i].offsetHeight;
                                             
