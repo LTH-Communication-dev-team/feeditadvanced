@@ -252,7 +252,7 @@ class tx_feeditadvanced_menu {
                     </a>
                 </li>';
                         
-                $hiddenStyle = ' style="display:none;';
+                $hiddenStyle = ' style="display:none;"';
                 if ($_COOKIE['extend_feeditadvanced_copycutitem']) {
                     $hiddenStyle ='';
                 }
