@@ -212,7 +212,7 @@ class tx_feeditadvanced_menu {
                         <ul>
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPageTooltip').'" href="#" onclick="newPage();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newPage').'</a></li>
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newContentTooltip').'" href="#" onclick="newContent();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newContent').'</a></li>
-                            <li id="extend_feeditadvanced_create_news"><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newNewsTooltip').'" href="#" onclick="createNews();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newNews').'</a></li>
+                            <!-- <li id="extend_feeditadvanced_create_news"><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newNewsTooltip').'" href="#" onclick="createNews();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newNews').'</a></li> -->
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newInsertRightColumnTooltip').'" href="#" onclick="addRightColumn();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:newInsertRightColumn').'</a></li>
                         </ul>
                     </div>
@@ -260,6 +260,13 @@ class tx_feeditadvanced_menu {
                     <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:pasteTooltip').'" onclick="pasteAction(\'\');return false;" href="#">
                     <span class="icon-white-download-alt"></span>
                     <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:paste').'</span>
+                    </a>
+                </li>';
+		
+		$content .= '<li id="extend_feeditadvanced_top_menu_hide_content_elements_row" class="top_menu_item"'.$hiddenStyle.'>
+                    <a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:hideContentElementsRowTooltip').'" onclick="hideContentElementsRow(\'\');return false;" href="#">
+                    <span class="icon-white-remove"></span>
+                    <span>'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:hideContentElementsRow').'</span>
                     </a>
                 </li>';
                 
