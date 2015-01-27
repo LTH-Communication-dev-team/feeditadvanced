@@ -740,8 +740,8 @@ TYPO3.FeEdit.DropZone = Ext.extend(TYPO3.FeEdit.Base, {
 			var previousElement = editPanelObj;
 			var elId = Ext.id(null, this.baseCls + '-top-');
 		}
-                console.log(previousElement);
-		this.el = Ext.DomHelper.insertAfter(previousElement, {
+
+                this.el = Ext.DomHelper.insertAfter(previousElement, {
 			'tag': 'div',
 			'id':  elId,
 			'cls': this.baseCls,

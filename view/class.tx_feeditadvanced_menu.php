@@ -226,7 +226,7 @@ class tx_feeditadvanced_menu {
                     <div class="feEditAdvanced-toolItemsMenu top_menu_div">
                         <ul>
                             <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolFileManagerTooltip').'" href="#" onclick="fileManager();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolFileManager').'</a></li>
-                            <li><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManagerTooltip').'" href="#" onclick="mailFormAdmin();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManager').'</a></li>
+                            <li id="formHandlerManagerMenu"><a title="'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManagerTooltip').'" href="#" onclick="mailFormAdmin();return false;">'.$GLOBALS['LANG']->sL('LLL:EXT:extend_feeditadvanced/locallang.xml:toolMailFormManager').'</a></li>
                        </ul>
                     </div>
                 </li>                
