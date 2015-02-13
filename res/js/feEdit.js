@@ -954,6 +954,7 @@ TYPO3.FeEdit.EditPanelAction = Ext.extend(TYPO3.FeEdit.Base, {
 		// remove the doubled TSFE_EDIT[cmd] (because it's empty) before we add the real cmd value
 		requestParams  = requestParams.replace(/&TSFE_EDIT%5Bcmd%5D=&/, '&');
 		requestParams += '&TSFE_EDIT[cmd]=' + this.cmd + pidRequestParam;
+                console.log(Date.now());
 		return requestParams;
 	},
 

@@ -172,6 +172,7 @@ class tx_feeditadvanced_ajax {
 				$this->ajaxObj->addContent('uid', $uid);
 			}
 				// Return output
+			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '175', 'crdate' => time()));
 			$this->ajaxObj->render();
 		}
 	}
@@ -208,9 +209,7 @@ class tx_feeditadvanced_ajax {
 	 * @return	void
 	 */
 	protected function editItem($table, $uid) {
-	    			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '211', 'crdate' => time()));
 		$this->renderContentElement($table, $uid);
-					$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '213', 'crdate' => time()));
 	}
 
 	/**
