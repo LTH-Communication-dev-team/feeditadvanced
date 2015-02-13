@@ -474,7 +474,9 @@ class tx_feeditadvanced_editpanel {
 			if ($theCmd == 'edit') {
 				$markerArray['###CONTENT_ELEMENT###'] = '';
 			}
+			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '476', 'crdate' => time()));
 			$markerArray = $this->formsOnPageForm($markerArray,$table, $recordData, $currentRecord, $conf, $content, $theCmd, $newUID, $fieldList);
+			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '479', 'crdate' => time()));
 		} else {
 				// fill in the markers
 			$markerArray['###EDITPANEL_ACTIONS###'] = $editpanelItems;
@@ -526,7 +528,7 @@ class tx_feeditadvanced_editpanel {
 	 * @see	editPanel(), editIcons(), t3lib_tsfeBeUserAuth::extEditAction()
 	 */
 	protected function formsOnPageForm($markerArray, $table, $dataArr=array(), $currentRecord='', $conf='', $content='', $theCmd='edit', $newUID='', $fieldList='') {
-			// change some TCA for this editing mode - must use here because tceforms related hook is not available for edit icons
+	    			// change some TCA for this editing mode - must use here because tceforms related hook is not available for edit icons
 		tx_feeditadvanced_tceforms::changeTCAforFormsOnPage($GLOBALS['TCA'],$table);
 
 			 // configuration for edit panels
