@@ -149,8 +149,7 @@ class tx_feeditadvanced_editpanel {
 	 * @link http://typo3.org/doc.0.html?&tx_extrepmgm_pi1[extUid]=270&tx_extrepmgm_pi1[tocEl]=375&cHash=7d8915d508
 	 */
 	public function editPanel($content, array $conf, $currentRecord='', array $dataArr=array(), $table='', $allow='', $newUID=0, array $hiddenFields=array()) {
-        			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '152', 'crdate' => time()));
-
+        
 
 		// if fe editing is inactive, then just show content
 		if (isset($GLOBALS['BE_USER']->uc['TSFE_adminConfig']['menuOpen']) && ($GLOBALS['BE_USER']->uc['TSFE_adminConfig']['menuOpen'] == 0))  {
@@ -316,8 +315,6 @@ class tx_feeditadvanced_editpanel {
            
                 $userSettingsArray = array();
                 $userSettingsArray = json_decode($feeditadvanced_userSettings,TRUE);
-					$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '319', 'crdate' => time()));
-
 		$markerArray = $this->wrapContent($markerArray, $table, $uid, $dataArr, $conf, $allowOrder, $theCmd, $newUID, $fieldList, $userSettingsArray['hiddenElement']);
 			// clear out any unused marker sections
 		if (!strlen($markerArray['###FORM_CONTENT###'])) {
@@ -354,7 +351,6 @@ class tx_feeditadvanced_editpanel {
 			// and any start & end comments @todo -- how to make more efficient
 		$output = preg_replace('/<!--([\s]*?)start([\s]*?)-->/', '', $output);
 		$output = preg_replace('/<!--([\s]*?)end([\s]*?)-->/', '', $output);
-			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '357', 'crdate' => time()));
 
 		return $output;
 	}
