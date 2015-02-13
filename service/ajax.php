@@ -124,7 +124,6 @@ class tx_feeditadvanced_ajax {
 	 */
 	public function processAction() {
 		if ($this->isFrontendEditActive()) {
-		    $GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '127', 'crdate' => time()));
 				// Setup ajax object
 			require_once(PATH_typo3.'classes/class.typo3ajax.php');
 			$this->ajaxObj = t3lib_div::makeInstance('TYPO3AJAX', 'feeditadvanced');
@@ -173,8 +172,9 @@ class tx_feeditadvanced_ajax {
 				$this->ajaxObj->addContent('uid', $uid);
 			}
 				// Return output
-			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '176', 'crdate' => time()));
+			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '175', 'crdate' => time()));
 			$this->ajaxObj->render();
+			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '177', 'crdate' => time()));
 		}
 	}
 
