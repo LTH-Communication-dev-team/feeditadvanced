@@ -503,7 +503,7 @@ class tx_feeditadvanced_adminpanel {
 	 * @param string $content
 	 * @return string
 	 */
-	protected function processAbsRefPrefix($TSFE, $content) {
+	protected static function processAbsRefPrefix($TSFE, $content) {
 		$originalContent = $TSFE->content;
 		$TSFE->content  = $content;
 
