@@ -373,7 +373,7 @@ class tx_feeditadvanced_adminpanel {
 			// hook to load in any extra / additional JS includes
 		if (is_array($GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['EXT:feeditadvanced/view/class.tx_feeditadvanced_adminpanel.php']['addIncludes'])) {
 			foreach  ($GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['EXT:feeditadvanced/view/class.tx_feeditadvanced_adminpanel.php']['addIncludes'] as $classRef) {
-				$hookObj = &t3lib_div::getUserObj($classRef);
+				$hookObj = t3lib_div::getUserObj($classRef);
 				if (method_exists($hookObj, 'addIncludes')) {
 					$includes[] = $hookObj->addIncludes();
 				}
