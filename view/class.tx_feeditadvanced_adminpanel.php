@@ -93,7 +93,7 @@ class tx_feeditadvanced_adminpanel {
 	 *
 	 * @return void
 	 */
-	public static function showMenuBar($params, &$parent) {
+	public static function showMenuBar($params, $parent) {
 		if (is_object($GLOBALS['BE_USER']) && $GLOBALS['TSFE']->beUserLogin) {
 			$adminPanel = t3lib_div::makeInstance('tx_feeditadvanced_adminpanel');
 			$feEditContent = self::processAbsRefPrefix($parent, $adminPanel->display());
