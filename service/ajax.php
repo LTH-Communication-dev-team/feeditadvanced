@@ -172,8 +172,9 @@ class tx_feeditadvanced_ajax {
 				$this->ajaxObj->addContent('uid', $uid);
 			}
 				// Return output
-			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_devlog', array('msg' => '175', 'crdate' => time()));
+			require ('/var/www/html/typo3/typo3conf/ext/xhprof/utilities/header.php');
 			$this->ajaxObj->render();
+			require ('/var/www/html/typo3/typo3conf/ext/xhprof/utilities/footer.php');
 		}
 	}
 
